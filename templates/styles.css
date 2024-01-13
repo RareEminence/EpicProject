@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color:rgb(38 18 51);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+.loginBox{
+    height: 550px;
+    width: 400px;
+    background-color: rgb(19 6 27);
+    border-radius: 9px;
+    box-shadow: 0px 0px 1.5em 0.2em rgb(19 6 27);
+}
+#logo{
+    margin: 32px 0px 0px 53px;
+    height: 40px;
+    width: 280px;
+}
+.InBtn {
+    margin: 30px 60px 0px 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.InBtn a {
+    text-decoration: none;
+    position: relative;
+    color: #ffffff;
+}
+
+.InBtn a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: rgb(98, 37, 127);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.InBtn a:hover::after {
+    width: 100%;
+}
+
+.InputForm {
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 9px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    width: 250px;
+}
+::placeholder{
+    padding: 2px 0px 1px 12px;
+    font-size: 14px;
+}
+
+button {
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    margin: 5px 0px 18px 0px;
+    border: 1px solid rgb(63, 15, 93);
+    border-radius: 5px;
+    background-color: rgb(81, 30, 113);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+button::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: 10;
+    transition: 0.4s ease;
+}
+button:hover::before{
+    transform: scaleX(1);
+}
+button:hover{
+    transform: scale(0.8);
+}
+button p{
+    color: #f2efef;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 11;
+    letter-spacing: 1.7px;
+    position: relative;
+}
+button:hover p{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
