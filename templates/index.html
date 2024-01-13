@@ -2,23 +2,36 @@
 <html>
 <head>
     <title>Simple Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome! Please provide your information:</h1>
-    <form action="/submit" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <div class="container">
+        <div class="loginBox">
+            <img id="logo" src="logoImg.png">
+        </img>
+            <section class="InBtn">
+                <a href="login.html" >
+                    LOG IN
+                </a>
+                <a href="signup.html">
+                    SIGN UP
+                </a>
+            </section>
+    <section class="InputForm">
+        <form action="/submit" method="post">
+        <input type="text" id="name" name="name" placeholder="username" required><br><br>
         
-        <label for="address">Address:</label><br>
-        <input type="text" id="address" name="address" required><br><br>
+        <input type="text" id="address" name="address" required placeholder="address"><br><br>
         
-        <label for="phone">Phone:</label><br>
-        <input type="text" id="phone" name="phone" required><br><br>
+        <input type="text" id="phone" name="phone" required placeholder="+91-919293****"><br><br>
+
+        <input type="email" id="email" name="email" required placeholder="you@example.com"><br><br>
         
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <input type="submit" value="Submit">
-    </form>
+        <button type="submit" value="Submit" id="submit"><p>Log In</p></button>
+        <a href="signup.html">Forgot Password ?</a>
+        </form>
+    </section>
+    </div>
+    </div>
 </body>
 </html>
